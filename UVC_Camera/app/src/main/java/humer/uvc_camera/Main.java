@@ -41,7 +41,7 @@ package humer.uvc_camera;
 
 public class Main extends Activity {
 
-    private static final String ACTION_USB_PERMISSION = "biz.source_code.usbcamtest1.USB_PERMISSION";
+    private static final String ACTION_USB_PERMISSION = "humer.uvc_camera.USB_PERMISSION";
 
     // USB codes:
 // Request types (bmRequestType):
