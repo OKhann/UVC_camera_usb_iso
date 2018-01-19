@@ -1,10 +1,5 @@
 package humer.uvc_camera;
 
-// TODO:
-// - Explizit einen isochronousen oder bulk Endpoint auswählen.
-// - Alt-Interface automatisch suchen aufgrund von maxPacketSize und
-// - Sauberen Close/Open programmieren. econ 5MP USB3 läuft nur nach re-open.
-
         import android.app.Activity;
         import android.app.PendingIntent;
         import android.content.Intent;
@@ -220,8 +215,6 @@ public class Main extends Activity {
                 // imageHeight = 480;
                 camFrameInterval = 2000000;               // dwFrameInterval: 30 Hz
                 // camFrameInterval = 333333;
-                packetsPerRequest = 128;
-                activeUrbs = 8;
                 break;
             case microdia:
                 camStreamingAltSetting = 6;              // 6 = 3x1024 bytes packet size
@@ -232,7 +225,6 @@ public class Main extends Activity {
                 // imageHeight = 720;
                 camFrameInterval = 666666;               // dwFrameInterval: 45 Hz
                 // camFrameInterval = 666666;
-                activeUrbs = 8;
                 break;
             case logitechC310:
                 camStreamingAltSetting = 11;              // 11 = 3x1020 bytes packet size
