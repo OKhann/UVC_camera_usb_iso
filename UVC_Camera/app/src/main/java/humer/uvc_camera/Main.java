@@ -322,10 +322,8 @@ public class Main extends Activity {
             return CameraType.logitechC310; }
         else if (dev.getVendorId() == 0x0c45 && dev.getProductId() == 0x6366) {
             return CameraType.microdia; }
-        else if (dev.getVendorId() == 0x2560 && dev.getProductId() == 0xC051) {
-            return CameraType.arkmicro; }
         else if (dev.getVendorId() == 0x18ec && dev.getProductId() == 0x3390) {
-            return CameraType.econ_5MP_USB2; }
+            return CameraType.arkmicro; }
         else if (dev.getVendorId() == 0x2560 && dev.getProductId() == 0xC151) {
             return CameraType.econ_5MP_USB3; }
         else if (dev.getVendorId() == 0x2560 && dev.getProductId() == 0xC080) {
