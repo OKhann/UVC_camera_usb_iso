@@ -213,8 +213,8 @@ public class Main extends Activity {
                 camFrameIndex = 1;                        // bFrameIndex: 1 = 640 x 480, 2 = 160 x 120, 3 = 176 x 144, 4 = 320 x 240, 5 = 352 x 288
                 // imageWidth = 640;
                 // imageHeight = 480;
-                camFrameInterval = 2000000;               
-                // camFrameInterval = 333333;
+                camFrameInterval = 2000000;               //
+                // camFrameInterval = 333333;             // 333333 = 30 fps, 2000000 = 5 fps
                 packetsPerRequest = 1;
                 activeUrbs = 4;
                 break;
@@ -226,7 +226,7 @@ public class Main extends Activity {
                 // imageWidth = 1280;
                 // imageHeight = 720;
                 camFrameInterval = 666666;
-                // camFrameInterval = 666666;
+                // camFrameInterval = 666666;             // 666666 = 15 fps
                 packetsPerRequest = 1;
                 activeUrbs = 4;
                 break;
