@@ -213,8 +213,10 @@ public class Main extends Activity {
                 camFrameIndex = 1;                        // bFrameIndex: 1 = 640 x 480, 2 = 160 x 120, 3 = 176 x 144, 4 = 320 x 240, 5 = 352 x 288
                 // imageWidth = 640;
                 // imageHeight = 480;
-                camFrameInterval = 2000000;               // dwFrameInterval: 30 Hz
+                camFrameInterval = 2000000;               
                 // camFrameInterval = 333333;
+                packetsPerRequest = 1;
+                activeUrbs = 4;
                 break;
             case microdia:
                 camStreamingAltSetting = 6;              // 6 = 3x1024 bytes packet size
@@ -223,8 +225,10 @@ public class Main extends Activity {
                 camFrameIndex = 1;                        // bFrameIndex: 1 = 1280 x 720,
                 // imageWidth = 1280;
                 // imageHeight = 720;
-                camFrameInterval = 666666;               // dwFrameInterval: 45 Hz
+                camFrameInterval = 666666;
                 // camFrameInterval = 666666;
+                packetsPerRequest = 1;
+                activeUrbs = 4;
                 break;
             case logitechC310:
                 camStreamingAltSetting = 11;              // 11 = 3x1020 bytes packet size
